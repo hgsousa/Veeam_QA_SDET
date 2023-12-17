@@ -138,30 +138,6 @@ def log_operation(message):
 
 if __name__ == "__main__":
 
-    """
-    # Set your source and replica folder paths
-    source_folder = r"W:\PyCharm\PycharmProjects\source"
-    replica_folder = r"W:\PyCharm\PycharmProjects\replica"
-
-    log_file = "sync_log.txt"
-
-    setup_logging(log_file)
-
-    time.sleep(2)
-
-
-    while True:
-        if verify_folders_satus(source_folder, replica_folder) is not False:
-            hash_src = size_content_path(source_folder)
-            hash_repl = size_content_path(replica_folder)
-            check_folders_change(hash_src,hash_repl,source_folder, replica_folder)
-            time.sleep(20)
-
-        else:
-            break
-
-"""
-
     parser = argparse.ArgumentParser(description='Folder Synchronization Script')
     parser.add_argument("source_folder", help='Path to source folder')
     parser.add_argument("replica_folder", help='Path to replica folder')
